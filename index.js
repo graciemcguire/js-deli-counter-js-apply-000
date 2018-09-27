@@ -4,6 +4,24 @@ function takeANumber(line, name){
 }
 
 
+
+function takeANumber(line){
+  let count = 1;
+  line.push(count);
+  return `Welcome! You're ticket number #${count++}`;
+}
+
+// takeANumber(katzDeli) => "Welcome! You're ticket number #1" [1]
+// takeANumber(katzDeli) => "Welcome! You're ticket number #2" [1, 2]
+
+// nowServing(katzDeli) => "Currently serving #1" [2]
+// nowServing(katzDeli) => "Currently serving #2" []
+
+// takeANumber(katzDeli) => "Welcome! You're ticket number #3" [3]
+
+
+
+
 function nowServing(line){
   if (!line.length){
     return 'There is nobody waiting to be served!';
