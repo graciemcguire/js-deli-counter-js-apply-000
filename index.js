@@ -4,10 +4,10 @@ function takeANumber(line, name){
 }
 
 
+let count = 1;
 
 function takeANumber(line){
-  let count = 1;
-  line.push(count);
+  line.push(count );
   return `Welcome! You're ticket number #${count++}`;
 }
 
